@@ -6,6 +6,9 @@ import android.content.Context;
 import androidx.multidex.MultiDex;
 import androidx.multidex.MultiDexApplication;
 
+
+import com.umeng.commonsdk.UMConfigure;
+
 import org.android.agoo.huawei.HuaWeiRegister;
 import org.android.agoo.xiaomi.MiPushRegistar;
 
@@ -24,8 +27,10 @@ public class App extends MultiDexApplication {
         super.onCreate();
 
         //初始化
-//        initPushSDK();
-//        MiPushRegistar.register(this, "143576","c306e9e3de484148a781e63d666ec565");
+        initPushSDK();
+        MiPushRegistar.register(this, "143576","c306e9e3de484148a781e63d666ec565");
+        UMConfigure.init(this, PushConstants.APP_KEY, PushConstants.CHANNEL,
+                UMConfigure.DEVICE_TYPE_PHONE, PushConstants.MESSAGE_SECRET);
 
         PushConfig config = new PushConfig.Builder()
                 .enableHWPush(true)
