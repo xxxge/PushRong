@@ -26,11 +26,15 @@ public class App extends MultiDexApplication {
     public void onCreate() {
         super.onCreate();
 
+//        友盟推送初始化
+        //日志开关
+        UMConfigure.setLogEnabled(true);
+        //预初始化
+        PushHelper.preInit(this);
         //初始化
-        initPushSDK();
-        MiPushRegistar.register(this, "143576","c306e9e3de484148a781e63d666ec565");
-        UMConfigure.init(this, PushConstants.APP_KEY, PushConstants.CHANNEL,
-                UMConfigure.DEVICE_TYPE_PHONE, PushConstants.MESSAGE_SECRET);
+        PushHelper.init(getApplicationContext());
+//        友盟推送初始化 结束
+
 
         PushConfig config = new PushConfig.Builder()
                 .enableHWPush(true)
@@ -42,19 +46,6 @@ public class App extends MultiDexApplication {
         RongPushClient.setPushConfig(config);
         RongIM.init(this,"8luwapkv86del");
 
-//        HuaWeiRegister.register(this);
-        //友盟初始化
 
-
-
-    }
-
-    private void initPushSDK() {
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                PushHelper.init(getApplicationContext());
-            }
-        }).start();
     }
 }

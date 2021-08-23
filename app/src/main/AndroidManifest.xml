@@ -21,7 +21,7 @@
     <!-- MeiZu 配置结束 < -->
 
     <uses-permission android:name="android.permission.INTERNET"/>
-    <meta-data android:name="com.huawei.hms.client.appid" android:value="appid=104643981"/>
+
     <application
         android:name=".App"
 
@@ -127,6 +127,11 @@
         <meta-data
             android:name="com.vivo.push.app_id"
             android:value="105504865"/>
+
+        <meta-data
+            android:name="com.huawei.hms.client.appid"
+            android:value="appid=104643981"/>
+
     </application>
 
 </manifest>
