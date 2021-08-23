@@ -20,6 +20,7 @@ import com.umeng.message.entity.UMessage;
 
 import org.android.agoo.huawei.HuaWeiRegister;
 import org.android.agoo.oppo.OppoRegister;
+import org.android.agoo.vivo.VivoRegister;
 import org.android.agoo.xiaomi.MiPushRegistar;
 
 public class PushHelper {
@@ -120,7 +121,7 @@ public class PushHelper {
         //OPPO，填写您在OPPO后台APP对应的app key和secret
         OppoRegister.register(context, PushConstants.OPPO_KEY, PushConstants.OPPO_SECRET);
         //vivo，注意vivo通道的初始化参数在minifest中配置
-//        VivoRegister.register(context);
+        VivoRegister.register(context);
     }
 
     /**
