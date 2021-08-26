@@ -1,8 +1,6 @@
 
 c
 3app/src/main/java/cn/rongcloud/um/MainActivity.java,7\9\79747561ecf5e62711e7846d7d6098a9d170e3d6
-Y
-)app/src/main/res/layout/activity_main.xml,7\6\76b07e40f24cce093536731477540f12e7da3cb6
 Z
 *app/src/main/java/cn/rongcloud/um/App.java,5\c\5cfd36158fba93cd1bdf88d88e1a7f2b82205cc9
 <

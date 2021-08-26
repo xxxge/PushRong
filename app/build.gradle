@@ -66,8 +66,8 @@ dependencies {
     implementation 'com.android.support:multidex:1.0.3'
     api 'cn.rongcloud.sdk:im_lib:5.1.4.1'
     api 'cn.rongcloud.sdk:im_kit:5.1.4.1'
-//    implementation 'com.ush:4.0.2.300'
-    api 'com.meizu.flyme.internet:push-internal:3.6.+@aar'
+//    implementation 'com.huawei.hms:push:4.0.2.300'
+//    api 'com.meizu.flyme.internet:push-internal:3.6.+@aar'
 //    implementation 'com.heytap.msp-push-2.1.0@aar'
 //    //友盟基础库依赖（必须）
     api 'com.umeng.umsdk:common:9.4.2'
@@ -90,4 +90,6 @@ dependencies {
     api 'com.umeng.umsdk:vivo-umengaccs:1.1.4'
     implementation 'com.umeng.umsdk:vivo-push:3.0.0'
 
+    api 'com.umeng.umsdk:meizu-umengaccs:1.1.4'
+    api 'com.umeng.umsdk:meizu-push:4.0.7'
 }
