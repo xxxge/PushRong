@@ -35,7 +35,7 @@ public class App extends MultiDexApplication {
         PushHelper.init(getApplicationContext());
 //        友盟推送初始化 结束
 
-
+//        融云推送
         PushConfig config = new PushConfig.Builder()
                 .enableHWPush(true)
                 .enableVivoPush(true)

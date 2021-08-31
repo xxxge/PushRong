@@ -24,21 +24,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Intent intent = getIntent();
-        Bundle extras = intent.getExtras();
-        JSONObject rc = null;
-        if (extras!=null) {
-            try {
-                rc = new JSONObject(extras.getString("rc"));
-                Log.d("TAG", "main: get data" + rc);
-                Conversation.ConversationType conversationType =
-                        Conversation.ConversationType.setValue(rc.getInt("conversationType"));
-                String targetId = rc.getString("fromUserId");
-                String content = rc.getString("content");
-            } catch (JSONException e) {
-                e.printStackTrace();
-            }
-        }
         connectRong();
 
 

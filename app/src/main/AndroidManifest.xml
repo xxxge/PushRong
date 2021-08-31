@@ -2,6 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="cn.rongcloud.um">
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        tools:overrideLibrary="com.huawei.hms.framework.common,com.huawei.hms.framework.network.grs,com.huawei.hmf.tasks,com.huawei.agconnect.core,com.huawei.hms.log,com.huawei.hms.base.device,com.huawei.hms.base.ui,com.huawei.hms.stats,com.huawei.hms.base.availableupdate,com.huawei.android.hms.base,com.huawei.android.hms.openid,org.android.agoo.oppo,com.vivo.push,org.android.agoo.vivo,org.android.agoo.meizu,com.huawei.android.hms.push,org.android.agoo.huawei,com.heytap.mcssdk,com.huawei.hms.hatool,com.huawei.hms.framework.network.frameworkcompat"/>
+
     <!-- 小米 配置开始 < -->
     <!-- <permission -->
     <!-- android:name="cn.rongcloud.um.permission.MIPUSH_RECEIVE" -->
@@ -144,16 +149,16 @@
 
 
 <!--        友盟中魅族-->
-        <receiver android:name=".umeng.MfrMzMessageReceiver">
-            <intent-filter>
-                <action android:name="com.meizu.flyme.push.intent.MESSAGE" />
-                <action android:name="com.meizu.flyme.push.intent.REGISTER.FEEDBACK" />
-                <action android:name="com.meizu.flyme.push.intent.UNREGISTER.FEEDBACK" />
-                <action android:name="com.meizu.c2dm.intent.REGISTRATION" />
-                <action android:name="com.meizu.c2dm.intent.RECEIVE" />
-                <category android:name="${applicationId}"/>
-            </intent-filter>
-        </receiver>
+<!--        <receiver android:name=".umeng.MfrMzMessageReceiver">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="com.meizu.flyme.push.intent.MESSAGE" />-->
+<!--                <action android:name="com.meizu.flyme.push.intent.REGISTER.FEEDBACK" />-->
+<!--                <action android:name="com.meizu.flyme.push.intent.UNREGISTER.FEEDBACK" />-->
+<!--                <action android:name="com.meizu.c2dm.intent.REGISTRATION" />-->
+<!--                <action android:name="com.meizu.c2dm.intent.RECEIVE" />-->
+<!--                <category android:name="${applicationId}"/>-->
+<!--            </intent-filter>-->
+<!--        </receiver>-->
 
 
         <activity android:name=".umeng.MfrMessageActivity"  android:exported="true"

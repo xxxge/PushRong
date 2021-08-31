@@ -1,0 +1,25 @@
+
+O
+java:S1481$"-Remove this unused "targetId" local variable.(–Î¨‡üÿÿÿÿ8ç¨¼ƒ¸/
+V
+java:S1128
+"4Remove this unused import 'android.widget.TextView'.(„Ë‚ˆÿÿÿÿÿ8§ñë»·/
+W
+java:S1481""5Remove this unused "conversationType" local variable.(ƒÃôÛýÿÿÿÿ8ç¨¼ƒ¸/
+f
+java:S1854""DRemove this useless assignment to local variable "conversationType".(ƒÃôÛýÿÿÿÿ8ç¨¼ƒ¸/
+H
+java:S1481%",Remove this unused "content" local variable.(Á¹Ô8ç¨¼ƒ¸/
+X	java:S110"<This class has 9 parents which is greater than 5 authorized.(²Ú±Ž8ÓŸã‘¶/
+P
+java:S1128	".Remove this unused import 'android.view.View'.(Ø½­äþÿÿÿÿ8Ò©²ƒ¸/
+£
+java:S1186>"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(‹þ›øþÿÿÿÿ8ê›ë“·/
+£
+java:S11869"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Î»ð»ûÿÿÿÿ8ê›ë“·/
+^
+java:S1854$"<Remove this useless assignment to local variable "targetId".(–Î¨‡üÿÿÿÿ8ç¨¼ƒ¸/
+W
+java:S1854%";Remove this useless assignment to local variable "content".(Á¹Ô8ç¨¼ƒ¸/
+L
+java:S1128"/Remove this unused import 'android.os.Handler'.(ûÛ’¡8ªŒþ¸/

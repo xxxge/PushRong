@@ -19,6 +19,7 @@ import com.umeng.message.api.UPushRegisterCallback;
 import com.umeng.message.entity.UMessage;
 
 import org.android.agoo.huawei.HuaWeiRegister;
+import org.android.agoo.mezu.MeizuRegister;
 import org.android.agoo.oppo.OppoRegister;
 import org.android.agoo.vivo.VivoRegister;
 import org.android.agoo.xiaomi.MiPushRegistar;
@@ -117,7 +118,7 @@ public class PushHelper {
         //华为，注意华为通道的初始化参数在minifest中配置
         HuaWeiRegister.register((Application) context.getApplicationContext());
         //魅族，填写您在魅族后台APP对应的app id和key
-//        MeizuRegister.register(context, PushConstants.MEI_ZU_ID, PushConstants.MEI_ZU_KEY);
+        MeizuRegister.register(context, PushConstants.MEI_ZU_ID, PushConstants.MEI_ZU_KEY);
         //OPPO，填写您在OPPO后台APP对应的app key和secret
         OppoRegister.register(context, PushConstants.OPPO_KEY, PushConstants.OPPO_SECRET);
         //vivo，注意vivo通道的初始化参数在minifest中配置
