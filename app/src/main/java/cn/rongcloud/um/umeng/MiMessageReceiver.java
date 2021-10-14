@@ -60,6 +60,7 @@ public class MiMessageReceiver extends PushMessageReceiver {
         if ("register".equals(command)) {
             if (message.getResultCode() == 0L) {
                 PushManager.getInstance().onReceiveToken(context, PushType.XIAOMI, cmdArg1);
+                //将token 上送给友盟
                 NotifManager notifManager=new NotifManager();
                 notifManager.init(context.getApplicationContext());
                 notifManager.reportThirdPushToken(cmdArg1,"MI_TOKEN");
