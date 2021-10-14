@@ -3,9 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="cn.rongcloud.um">
 
-    <uses-sdk
-        android:minSdkVersion="14"
-        tools:overrideLibrary="com.huawei.hms.framework.common,com.huawei.hms.framework.network.grs,com.huawei.hmf.tasks,com.huawei.agconnect.core,com.huawei.hms.log,com.huawei.hms.base.device,com.huawei.hms.base.ui,com.huawei.hms.stats,com.huawei.hms.base.availableupdate,com.huawei.android.hms.base,com.huawei.android.hms.openid,org.android.agoo.oppo,com.vivo.push,org.android.agoo.vivo,org.android.agoo.meizu,com.huawei.android.hms.push,org.android.agoo.huawei,com.heytap.mcssdk,com.huawei.hms.hatool,com.huawei.hms.framework.network.frameworkcompat"/>
+<!--    <uses-sdk-->
+<!--        android:minSdkVersion="14"-->
+<!--        tools:overrideLibrary="com.huawei.hms.framework.common,com.huawei.hms.framework.network.grs,com.huawei.hmf.tasks,com.huawei.agconnect.core,com.huawei.hms.log,com.huawei.hms.base.device,com.huawei.hms.base.ui,com.huawei.hms.stats,com.huawei.hms.base.availableupdate,com.huawei.android.hms.base,com.huawei.android.hms.openid,org.android.agoo.oppo,com.vivo.push,org.android.agoo.vivo,org.android.agoo.meizu,com.huawei.android.hms.push,org.android.agoo.huawei,com.heytap.mcssdk,com.huawei.hms.hatool,com.huawei.hms.framework.network.frameworkcompat"/>-->
 
     <!-- 小米 配置开始 < -->
     <!-- <permission -->
@@ -34,7 +34,8 @@
         android:theme="@style/Theme.UmRong"
         tools:replace="android:theme,android:label,android:icon,android:allowBackup">
 
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -45,7 +46,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
                 <data
                     android:host="cn.rongcloud.um"
-                    android:pathPrefix="/conversationlist"
+                    android:pathPrefix="/conversation/"
                     android:scheme="rong" />
             </intent-filter>
         </activity> <!-- 小米 配置开始 < -->
@@ -81,7 +82,7 @@
             </intent-filter>
         </receiver>
         <receiver
-            android:name="io.rong.push.platform.mi.MiMessageReceiver"
+            android:name=".umeng.MiMessageReceiver"
             android:exported="true">
             <intent-filter>
                 <action android:name="com.xiaomi.mipush.RECEIVE_MESSAGE" />
@@ -173,6 +174,15 @@
                     android:scheme="agoo" />
             </intent-filter>
         </activity>
+         <receiver
+         android:name=".PushMessageNew"
+         android:exported="false">
+         <intent-filter>
+         <action android:name="io.rong.push.intent.MESSAGE_ARRIVED" />
+         <action android:name="io.rong.push.intent.MESSAGE_CLICKED" />
+         <action android:name="io.rong.push.intent.THIRD_PARTY_PUSH_STATE" />
+         </intent-filter>
+         </receiver>
     </application>
 
 </manifest>

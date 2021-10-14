@@ -60,3 +60,7 @@ q
 Aapp/src/main/java/cn/rongcloud/um/umeng/MfrMzMessageReceiver.java,b\5\b5e156b2711d3cc8261d884ea85901f5035e8a41
 d
 4app/src/main/java/cn/rongcloud/um/PushConstants.java,8\8\8808822655750d9fd2d8d9facec2423fafcdbb06
+e
+5app/src/main/java/cn/rongcloud/um/PushMessageNew.java,9\b\9ba169ef5548f08e49f2ee9e8c1434eec09eddf4
+n
+>app/src/main/java/cn/rongcloud/um/umeng/MiMessageReceiver.java,8\c\8c84c8a2d7adab7e90d5dab1ddc57a2da5075eb6

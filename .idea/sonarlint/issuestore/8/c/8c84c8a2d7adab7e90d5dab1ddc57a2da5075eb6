@@ -1,0 +1,11 @@
+
+K
+java:S19059")Remove this unnecessary cast to "String".(’ ¯Óúÿÿÿÿ8±ºÖŸÇ/
+F
+java:S1905:")Remove this unnecessary cast to "String".(ø˜ïü8±ºÖŸÇ/
+`
+java:S11559">Use isEmpty() to check whether the collection is empty or not.(’ ¯Óúÿÿÿÿ8±ºÖŸÇ/
+£
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(è­…»þÿÿÿÿ8±ºÖŸÇ/
+Q
+java:S1128"5Remove this unused import 'android.app.Notification'.(¸Ó†98ŸÏÙŸÇ/
